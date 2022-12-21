@@ -1,7 +1,19 @@
-import React from 'react';
+import React from "react";
+import homeimg from "../../assets/homeimg.jpg";
+import Hero from "../../components/Hero/Hero";
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <>
+      <Hero
+        cName="hero"
+        heroImg={homeimg}
+        title="Your Journey Your Story"
+        text="Choose Your Favourite Destination ."
+        url="/"
+        btnClass="show"
+        btnText="Travel Plane"
+      />
+    </>
+  );
 }
