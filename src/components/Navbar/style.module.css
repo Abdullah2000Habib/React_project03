@@ -8,6 +8,11 @@
     width: 95%;
     height: 80px;
     border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 999;
 
 
 }
@@ -39,7 +44,7 @@
     font-weight: 600;
     padding: 0.7rem 1rem;
     white-space: nowrap;
-    transition: all .02 ease-in-out;
+    transition: all 0.2s ease-in-out;
 
 }
 
@@ -70,11 +75,112 @@ button {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 button:hover {
 
     background-color: #151516;
     color: white;
+}
+
+.menuIcons {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .navbarItems {
+
+        z-index: 99;
+
+    }
+
+    .navMenu {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        border-radius: 13px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+
+    }
+
+    .navMenuActive {
+
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .navLinks {
+
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+
+
+    }
+
+    .navLinks:hover {
+
+        background-color: #01959a;
+
+    }
+
+    button {
+
+        display: none;
+    }
+
+    .navLinksMobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 4px;
+        width: 80%;
+        background-color: #01959a;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transition: all 0.2 ease-in-out;
+    }
+
+    .navLinksMobile:hover {
+
+        text-decoration: none;
+        color: #01959a;
+        background-color: black;
+    }
+
+    .menuIcons {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuIcons i {
+
+        font-size: 1.5rem;
+        color: #222;
+    }
+
+
+
+
+
 }
