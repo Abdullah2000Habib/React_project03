@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { navbarData } from './Data';
 
+import { Link } from 'react-router-dom';
 import style from "./style.module.css";
 
 export default function Navbar() {
@@ -13,13 +14,13 @@ export default function Navbar() {
         setClicked((prevState)=> {
             return !prevState
         }
-         )
+        )
 
     }
 
 
 
-  return (
+return (
     <>
 
     <nav className= {style.navbarItems}>
@@ -45,11 +46,11 @@ export default function Navbar() {
 
             <li key={item.id}>
 
-                <a  className={item.cName === "navLinks"? style.navLinks:style.navLinksMobile} href={item.url}>
+                <Link className={item.cName === "navLinks"? style.navLinks:style.navLinksMobile} to={item.url}>
                 <i className={item.icon}></i>
                     {item.title}
                     
-                </a>
+                </Link>
 
 
             </li>
@@ -73,5 +74,5 @@ export default function Navbar() {
     
     
     </>
-  )
+)
 }
