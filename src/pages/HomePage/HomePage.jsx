@@ -2,6 +2,7 @@ import React from "react";
 import homeimg from "../../assets/homeimg.jpg";
 import Destination from "../../components/Destination/Destination";
 import Hero from "../../components/Hero/Hero";
+import SuperTrip from "../../components/Trip/SuperTrip";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       />
 
       <Destination/>
+      <SuperTrip  />
     </>
   );
 }
