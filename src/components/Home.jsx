@@ -4,6 +4,7 @@ import AboutPage from '../pages/AboutPage/AboutPage';
 import ContactPage from '../pages/ContactPage/ContactPage';
 import HomePage from '../pages/HomePage/HomePage';
 import ServicePage from '../pages/ServicePage/ServicePage';
+import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 
 
@@ -23,6 +24,8 @@ export default function Home() {
 
 
     </Routes>
+
+        <Footer  />  
 
 
 
