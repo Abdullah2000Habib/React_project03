@@ -1,5 +1,6 @@
 import React from "react";
 import homeimg from "../../assets/homeimg.jpg";
+import Destination from "../../components/Destination/Destination";
 import Hero from "../../components/Hero/Hero";
 
 export default function HomePage() {
@@ -14,6 +15,8 @@ export default function HomePage() {
         btnClass="show"
         btnText="Travel Plane"
       />
+
+      <Destination/>
     </>
   );
 }
